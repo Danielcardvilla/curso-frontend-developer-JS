@@ -8,6 +8,8 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const shoppingCartContainer = document.querySelector("#shoppingCartContainer");
 const productDetailContainer = document.querySelector("#productDetail");
 const cardsContainer = document.querySelector(".cards-container");
+const ProductDetailContainer = document.querySelector("#productDetail");
+
 
 //ESCUCHADORES DE EVENTOS
 menuEmail.addEventListener('click', toggleDesktopMenu);
@@ -67,28 +69,27 @@ function closeProductDetailAside () {
     productList.push({
         name: 'bike',
         price: 120,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: './images venta/bike',
 
     });
    
     productList.push({
         name: 'teclado',
         price: 94,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: './images venta/keychron',
         
     });
     
     productList.push({
         name: 'Mouse',
         price: 99,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-        
+        image: './images venta/mx3'        
     }); 
 
     productList.push({
         name: 'poco x3',
         price: 300,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: './images venta/pocox3v.jpeg'        
         
     }); 
 
@@ -101,7 +102,6 @@ function closeProductDetailAside () {
             const productImg = document.createElement('img');
             productImg.setAttribute('src', product.image); 
             productImg.addEventListener('click', openProductDetailAside)
-
     
             const productInfo = document.createElement('div');
             productInfo.classList.add('product-info');
@@ -137,3 +137,4 @@ function closeProductDetailAside () {
     renderProducts(productList);
  
       
+ 
